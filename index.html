@@ -1904,6 +1904,12 @@ body.dark #test .test-wrapper > p {
     color: #e5e7eb !important;   /* svetlejší text */
     opacity: 0.95;
 }
+/* ================= DARK MODE – REMOVE OVERLAY FROM TEST SECTION ================= */
+
+body.dark #test.section::before,
+body.dark #test.section-alt::before {
+    display: none;
+}
 
     /* ================= FOOTER ================= */
 
